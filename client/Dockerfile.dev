@@ -1,0 +1,16 @@
+FROM	node:17-alpine3.14
+
+WORKDIR /app
+
+COPY	./package.json ./
+COPY	./package-lock.json ./
+COPY	./tsconfig* ./
+
+RUN		npm install --force
+
+COPY	./src ./src
+COPY	./public ./public
+
+EXPOSE	3000
+
+CMD		npm run start

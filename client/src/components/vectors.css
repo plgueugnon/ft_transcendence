@@ -1,0 +1,19 @@
+[class*='shape'] {
+	z-index: -1;
+}
+
+.left-shape {
+	position: absolute;
+	height: 691px;
+	width: 1205px;
+	left: -680px;
+	top: 30px;
+}
+
+.right-shape {
+	position: absolute;
+	width: 898px;
+	height: 967px;
+	right: -10px;
+	top: -550px;
+}

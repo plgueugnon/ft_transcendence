@@ -1,0 +1,20 @@
+.tab-main {
+	transition: .15s ease-in;
+	transition-property: transform;
+}
+
+.tab-active {
+	transform: translate(0%);
+}
+
+.tab-slide-right {
+	transform: translate(150%);
+}
+
+.tab-slide-left {
+	transform: translate(-150%);
+}
+
+.tab-no-display {
+	display: none;
+}

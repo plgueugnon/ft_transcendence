@@ -1,0 +1,31 @@
+.filter-main {
+	height: 110px;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	margin-bottom: 30px;
+}
+
+.filter-content {
+	padding: 10px;
+	font-weight: bold;
+}
+
+.filter-title {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #689191;
+}
+
+.filter-children {
+	margin-top: 10px;
+	color: #689191;
+}
+
+.filter-button-text {
+	margin-top: 10px;
+	color: #999999;
+}

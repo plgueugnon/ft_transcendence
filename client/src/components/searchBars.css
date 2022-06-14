@@ -1,0 +1,24 @@
+.resultatsInput {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	/* identical to box height */
+
+	color: #000000;
+
+	margin: 20px 0;
+	width: 100%;
+	height: 64px;
+
+	background: #FFFFFF;
+	border: 1px solid #b6b6b6;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	padding: 0rem 1.5rem 0rem 1.5rem;
+	/* transition: 0.15s ease-out; */
+}
+
+.resultatsInput:focus {
+	border: 3px solid #f0b5a4;
+}

@@ -1,0 +1,6 @@
+.avatar-selection *,
+.avatar-selection *::before,
+.avatar-selection *::after {
+	box-sizing: border-box;
+	transition: 0.15s ease-out;
+}

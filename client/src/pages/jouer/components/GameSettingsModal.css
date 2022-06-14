@@ -1,0 +1,21 @@
+.paddle-selection.wrapper {
+	width: 100%;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+
+.paddle-selection .element {
+	margin: 100px;
+}
+
+.paddle-selection .element .text {
+	margin-top: 30px;
+}
+
+.paddle-selection .element img {
+	transition: 0.15s ease-out;
+}
+
+.paddle-selection .element img:hover {
+	transform: scale(1.1);
+}

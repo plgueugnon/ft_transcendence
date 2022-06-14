@@ -1,0 +1,19 @@
+/* [class*='aselect'] { */
+/* transition: all 0.15 ease-out; */
+/* } */
+
+.aselect-scale {
+	transform: scale(1.2);
+}
+
+.aselect-flip {
+	transform: rotateY(190deg);
+}
+
+.aselect-scale-flip {
+	transform: rotateY(190deg) scale(1.2);
+}
+
+.aselect-scale-up-flip {
+	transform: rotateY(190deg) scale(1.3);
+}

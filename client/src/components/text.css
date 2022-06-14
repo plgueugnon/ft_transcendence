@@ -1,0 +1,29 @@
+.page-title {
+	font-weight: 900;
+	font-size: 88px;
+	line-height: 100px;
+	/* margin: 50px 0; */
+}
+
+.page-subtitle {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 54px;
+}
+
+.form-title {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.form-subtitle {
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+.paragraph {
+	line-height: 20px;
+	font-size: 14px;
+}

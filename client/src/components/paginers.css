@@ -1,0 +1,33 @@
+[class*='paginer'] {
+	font-weight: 600;
+	font-size: 36px;
+	/* line-height: 40px; */
+	/* identical to box height, or 111% */
+
+	text-align: center;
+
+	min-width: 58px;
+	line-height: 58px;
+	border-radius: 50%;
+}
+
+.paginer {
+	color: #689191;
+}
+
+.paginer-active {
+	background: #689191;
+
+	color: #ffffff;
+}
+
+/* .paginer:hover {
+	background: #689191;
+
+	color: #ffffff;
+}
+
+.paginer-active:hover {
+	background: none;
+	color: #689191;
+} */

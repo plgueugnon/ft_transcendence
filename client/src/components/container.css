@@ -1,0 +1,16 @@
+.page-container {
+	margin-top: 100px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.page-container *,
+.page-container *::before,
+.page-container *::after {
+	box-sizing: border-box;
+	transition: 0.15s ease-out;
+}
+
+.full-screen-container {
+	width: 100%;
+	overflow: hidden;
+}

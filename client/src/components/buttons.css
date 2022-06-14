@@ -1,0 +1,63 @@
+.return-button {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	/* identical to box height, or 125% */
+	transition: 0.05s ease-out;
+	transition-property: color transform;
+	color: #000000;
+}
+
+/* BUTTON */
+
+[class*='confirm'] {
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 15px 35px;
+	margin-top: 7px;
+	height: 55px;
+	border: solid 1px #f0b5a4;
+	background: #f0b5a4;
+}
+
+.confirm:hover,
+.confirm-active,
+.confirm-active:hover {
+	background: #689191;
+	border-color: #689191;
+	color: white;
+}
+
+/* Img in the button */
+
+[class*='confirm'] img {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	float: left;
+	margin-left: -90px;
+	margin-top: -13px;
+	position: absolute;
+	filter: invert(1);
+}
+
+.confirm:hover img,
+.confirm-active img,
+.confirm-active:hover img {
+	filter: invert(0);
+}
+
+.input-button input {
+	font-weight: bold;
+	border: solid 1px #f0b5a4;
+	border-radius: 4px;
+	padding: 15px 35px;
+	margin-top: 7px;
+	height: 55px;
+}
+
+/* DISABLED */
+
+.button-disabled {
+	opacity: 60%;
+	cursor: default;
+}

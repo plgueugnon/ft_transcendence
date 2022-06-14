@@ -1,0 +1,60 @@
+version: '3.9'
+secrets:
+  psql-user:
+    file: ./secrets/psql-user.txt
+  psql-pass:
+    file: ./secrets/psql-pass.txt
+
+services:
+
+  server:
+    build:
+      context: ./nest
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "5001:5000"
+    environment:
+      - EXPOSE_PORT=5000
+      - INTRA_UID=${INTRA_UID}
+      - INTRA_SECRET=${INTRA_SECRET}
+      - MAILER_ID=${MAILER_ID}
+      - MAILER_PASS=${MAILER_PASS}
+    volumes:
+      - ./nest/upload:/app/upload
+
+  client:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+
+  db-server:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    secrets:
+      - psql-user
+      - psql-pass
+    environment:
+      - POSTGRES_USER_FILE=/run/secrets/psql-user
+      - POSTGRES_PASSWORD_FILE=/run/secrets/psql-pass
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - /goinfre/$USER/db-data/:/var/lib/postgresql/data # linux Clusters
+      # - ./db-data/:/var/lib/postgresql/data
+    container_name: db-server
+
+  db-client:
+    build:
+      context: ./db-client
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 5050:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
